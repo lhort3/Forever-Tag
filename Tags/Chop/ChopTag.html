@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Chop Pet Info</title>
+
+<style>
+  body {
+    margin: 0;
+    font-family: Roboto, Arial, sans-serif;
+    background: #f5f5f5;
+    color: #212121;
+  }
+
+  .container {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 16px;
+  }
+
+  .card {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    padding: 16px;
+    margin-bottom: 12px;
+  }
+
+  .center {
+    text-align: center;
+  }
+
+  .profile-img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 12px auto;
+    display: block;
+    background: #ddd;
+  }
+
+  h1 {
+    font-size: 22px;
+    margin: 8px 0;
+  }
+
+  .sub {
+    font-size: 14px;
+    color: #666;
+  }
+
+  /* Dropdown */
+  .dropdown {
+    border-top: 1px solid #eee;
+  }
+
+  .dropdown-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 14px 0;
+    cursor: pointer;
+  }
+
+  .left {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 500;
+    font-size: 15px;
+  }
+
+  .dropdown-content {
+    display: none;
+    padding: 0 0 12px 34px;
+    color: #555;
+    font-size: 14px;
+  }
+
+  .dropdown.active .dropdown-content {
+    display: block;
+  }
+
+  .arrow {
+    width: 18px;
+    height: 18px;
+    transition: transform 0.2s ease;
+  }
+
+  .dropdown.active .arrow {
+    transform: rotate(180deg);
+  }
+
+  img.icon {
+    width: 22px;
+    height: 22px;
+  }
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+  <div class="card center">
+    <img class="profile-img" src="https://lhort3.github.io/Forever-Tag/Tags/Chop/ChopPhoto.png" alt="Profile Image">
+
+    <h1>Hi, I'm Chop!</h1>
+    <div class="sub">Rottweiler - Female - Black and Tan</div>
+  </div>
+
+  <div class="card">
+
+    <div class="dropdown">
+      <div class="dropdown-header" onclick="toggle(this)">
+        <div class="left">
+          <img class="icon" src="https://img.icons8.com/fluency/48/contacts.png">
+          Contacts
+        </div>
+        <img class="arrow" src="https://img.icons8.com/ios-filled/50/777777/chevron-down.png">
+      </div>
+      <div class="dropdown-content">
+        Chris Horton - +447454222333
+        
+      </div>
+    </div>
+
+    <div class="dropdown">
+      <div class="dropdown-header" onclick="toggle(this)">
+        <div class="left">
+          <img class="icon" src="https://img.icons8.com/fluency/48/address.png">
+          Address
+        </div>
+        <img class="arrow" src="https://img.icons8.com/ios-filled/50/777777/chevron-down.png">
+      </div>
+      <div class="dropdown-content">
+        18 Woodfield Stables, Hinckley Road, Leicster LE9 4LH
+      </div>
+    </div>
+
+    <div class="dropdown">
+      <div class="dropdown-header" onclick="toggle(this)">
+        <div class="left">
+          <img class="icon" src="https://img.icons8.com/fluency/48/note.png">
+          Notes
+        </div>
+        <img class="arrow" src="https://img.icons8.com/ios-filled/50/777777/chevron-down.png">
+      </div>
+      <div class="dropdown-content">
+        Chop is friendly, please call us asap if shes lost! 
+      </div>
+    </div>
+
+    <div class="dropdown">
+      <div class="dropdown-header" onclick="toggle(this)">
+        <div class="left">
+          <img class="icon" src="https://img.icons8.com/fluency/48/virus.png">
+          Allergies
+        </div>
+        <img class="arrow" src="https://img.icons8.com/ios-filled/50/777777/chevron-down.png">
+      </div>
+      <div class="dropdown-content">
+        N/A
+      </div>
+    </div>
+
+    <div class="dropdown">
+      <div class="dropdown-header" onclick="toggle(this)">
+        <div class="left">
+          <img class="icon" src="https://img.icons8.com/fluency/48/medical-doctor.png">
+          Medical Conditions
+        </div>
+        <img class="arrow" src="https://img.icons8.com/ios-filled/50/777777/chevron-down.png">
+      </div>
+      <div class="dropdown-content">
+        N/A
+      </div>
+    </div>
+
+  </div>
+
+</div>
+
+<script>
+function toggle(el) {
+  el.parentElement.classList.toggle("active");
+}
+</script>
+
+</body>
+</html>
